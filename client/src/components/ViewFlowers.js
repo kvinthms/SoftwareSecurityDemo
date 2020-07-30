@@ -147,7 +147,7 @@ class Login extends Component {
     }
     handleComment = (flower) => {
         axios.post('/api/postcomments', {
-            token: localStorage.getItem('Token'),
+            username: localStorage.getItem('Token'),
             comments: this.state.postcomment,
             links: this.state.postlink,
             flower: flower
@@ -277,16 +277,20 @@ class Login extends Component {
                 return sight2;
             }
 
+            //<a onclick=alert(1)>xxs link</a>
+            //in comment field
             const getcomments = (name) => {
                 var c = this.state.comments
                 var sight3 = c.map((element, index) => {
 
                     if (element.flower === name) {
+                        let thing = element.comments;
                         return (
                             <div>
                                 <p>
                                     <li>Username: {element.username}</li>
-                                    <li>Comment: {element.comments}</li>
+                                    <li>Comment: <div dangerouslySetInnerHTML={{__html: element.comments}}/>
+                                    </li>
                                     {element.links !== '' ? <li><a href={element.links} >Link</a></li>: <div></div>}
                                 </p>
                             </div>

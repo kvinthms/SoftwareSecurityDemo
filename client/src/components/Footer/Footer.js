@@ -7,7 +7,7 @@ const FooterPage = () => {
       <MDBContainer fluid className="text-center text-md-center">
         <MDBRow>
           <MDBCol>
-            <h5 className="title">Software Security P1 - Secure</h5>
+            <h5 className="title">Software Security P1 - Vulnerable</h5>
             <div>
               Mustafa Mohamed, Pedro Sicilia, Kevin Thomas, Nicholas Tateo
             </div>

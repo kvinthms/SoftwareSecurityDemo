@@ -42,7 +42,7 @@ class NewSighting extends Component {
                 name: this.state.flowername,
                 location: this.state.location,
                 date: this.state.dateofsighting,
-                token: localStorage.getItem('Token'),
+                username: localStorage.getItem('Token'),
             })
                 .then((res, err) => {
                     if (!err) {

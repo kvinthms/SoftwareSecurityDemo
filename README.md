@@ -1,10 +1,4 @@
-# [Google Cloud Platform Deployment - Secure](https://minip1-272004.appspot.com/Home)
-
-[Insecure Site](https://minip1-vulnerable-272103.appspot.com/home)  
-[Insecure Site Repo](https://github.com/mustafamohamed001/SoftwareSecurityP1/tree/vulnerability)  
-[Screencast](https://youtu.be/T4q4fnuuNmk)  
-
-The Use/Abuse Cases and Report can be found in Mini.pdf  
+# [Google Cloud Platform Deployment - Vulnerable](https://minip1-vulnerable-272103.appspot.com/Home)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project contains an example project board meant to showcase how one can be used. The issues posted to it are not real issues.

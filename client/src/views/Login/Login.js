@@ -31,8 +31,6 @@ class Login extends Component {
             "password" : this.state.password,
         })
         .then((result) => {
-            console.log(result);
-            console.log(result.data.token);
             localStorage.setItem('Token', result.data.token);
             window.location = "/dashboard"
         })

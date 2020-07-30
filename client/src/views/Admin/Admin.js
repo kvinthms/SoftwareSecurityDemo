@@ -76,11 +76,6 @@ class Admin extends Component {
              );
         }) 
 
-        var token = localStorage.getItem('Token');
-        var decoded = jwt_decode(token);
-        var username = decoded.username;
-
-		if(username == 'admin') {
 			return (
 				<div style={{minHeight: 725}}>
 				<Card>
@@ -98,16 +93,7 @@ class Admin extends Component {
 				</Card>
 
 				</div>
-			);			
-		}
-		else {
-			return(
-				<Redirect to={{
-                    pathname: '/dashboard',
-                  }} />
-			)
-		}
-
+			);
     }
     
 }

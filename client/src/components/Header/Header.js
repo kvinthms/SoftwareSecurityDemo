@@ -7,20 +7,8 @@ import axios from 'axios';
 
 const Header = () => {
     try {
-        axios.post('/auth/auth', { 
-            "token" : localStorage.getItem('Token'),
-        })
-        .then((result) => {
-        })
-        .catch((error) => {
-            if(localStorage.getItem('Token')){
-                localStorage.removeItem('Token');
-                window.location = "/home"
-            }         
-        });
-        var token = localStorage.getItem('Token');
-        var decoded = jwt_decode(token);
-        var username = decoded.username;
+        var username = localStorage.getItem('Token');
+        var token = username
     } catch (error) {}
 
     var websiteName = "Southern Sierra Wildflower Club"
@@ -32,10 +20,10 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-                        <Nav.Link href="https://minip1-vulnerable-272103.appspot.com/Home">Vulnerable Site</Nav.Link>
-                        <Nav.Link href="/signout">Sign Out</Nav.Link>
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+                    <Nav.Link href="https://minip1-272004.appspot.com/Home">Secure Site</Nav.Link>
+                    <Nav.Link href="/signout">Sign Out</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
@@ -53,7 +41,7 @@ const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="https://minip1-vulnerable-272103.appspot.com/Home">Vulnerable Site</Nav.Link>
+                    <Nav.Link href="https://minip1-272004.appspot.com/Home">Secure Site</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             <Navbar.Collapse className="justify-content-end">
