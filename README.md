@@ -91,4 +91,4 @@ This exploit allows for a regular user searching for a flower to inject SQL to d
 
 ## Credits
 
-This project made in conjunction with: Mustafa Mohammed, Pedro Sicilia, and Nicholas Tateo
+This project made in conjunction with: Mustafa Mohamed, Pedro Sicilia, and Nicholas Tateo
